@@ -1,0 +1,7 @@
+numpy==1.21.5
+streamlit>=1.8.1
+scikit-fuzzy==0.4.2
+network==0.1
+networkx==2.5
+matplotlib==3.5.2
+matplotlib-inline==0.1.3
