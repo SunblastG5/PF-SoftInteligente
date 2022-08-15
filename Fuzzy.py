@@ -46,22 +46,22 @@ class ControlBrake:
 
         rule11 = ctrl.Rule(self.carPos['medio'] & self.carVel['muylento'] , self.brakeForce['pequeño'])
         rule12 = ctrl.Rule(self.carPos['medio'] & self.carVel['lento'] , self.brakeForce['pequeño'])
-        rule13 = ctrl.Rule(self.carPos['medio'] & self.carVel['medio'] , self.brakeForce['pequeño'])
-        rule14 = ctrl.Rule(self.carPos['medio'] & self.carVel['rapido'] , self.brakeForce['mediano'])
-        rule15 = ctrl.Rule(self.carPos['medio'] & self.carVel['muyrapido'] , self.brakeForce['mediano'])
+        rule13 = ctrl.Rule(self.carPos['medio'] & self.carVel['medio'] , self.brakeForce['mediano'])
+        rule14 = ctrl.Rule(self.carPos['medio'] & self.carVel['rapido'] , self.brakeForce['grande'])
+        rule15 = ctrl.Rule(self.carPos['medio'] & self.carVel['muyrapido'] , self.brakeForce['grande'])
 
 
-        rule16 = ctrl.Rule(self.carPos['lejos'] & self.carVel['muylento'] , self.brakeForce['pequeño'])
-        rule17 = ctrl.Rule(self.carPos['lejos'] & self.carVel['lento'] , self.brakeForce['pequeño'])
-        rule18 = ctrl.Rule(self.carPos['lejos'] & self.carVel['medio'] , self.brakeForce['pequeño'])
-        rule19 = ctrl.Rule(self.carPos['lejos'] & self.carVel['rapido'] , self.brakeForce['mediano'])
-        rule20 = ctrl.Rule(self.carPos['lejos'] & self.carVel['muyrapido'] , self.brakeForce['mediano'])
+        rule16 = ctrl.Rule(self.carPos['lejos'] & self.carVel['muylento'] , self.brakeForce['mediano'])
+        rule17 = ctrl.Rule(self.carPos['lejos'] & self.carVel['lento'] , self.brakeForce['mediano'])
+        rule18 = ctrl.Rule(self.carPos['lejos'] & self.carVel['medio'] , self.brakeForce['grande'])
+        rule19 = ctrl.Rule(self.carPos['lejos'] & self.carVel['rapido'] , self.brakeForce['grande'])
+        rule20 = ctrl.Rule(self.carPos['lejos'] & self.carVel['muyrapido'] , self.brakeForce['grande'])
 
-        rule21 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['muylento'] , self.brakeForce['pequeño'])
-        rule22 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['lento'] , self.brakeForce['pequeño'])
-        rule23 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['medio'] , self.brakeForce['pequeño'])
-        rule24 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['rapido'] , self.brakeForce['mediano'])
-        rule25 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['muyrapido'] , self.brakeForce['mediano'])
+        rule21 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['muylento'] , self.brakeForce['mediano'])
+        rule22 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['lento'] , self.brakeForce['mediano'])
+        rule23 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['medio'] , self.brakeForce['grande'])
+        rule24 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['rapido'] , self.brakeForce['grande'])
+        rule25 = ctrl.Rule(self.carPos['muylejos'] & self.carVel['muyrapido'] , self.brakeForce['grande'])
 
         brakesystem_ctrl=ctrl.ControlSystem([rule1,rule2,
                                             rule3,rule4,rule5,
